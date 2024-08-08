@@ -35,7 +35,7 @@
 </header>
 <body style="background-color:beige">
     <div class="container" style="background-color: white;">
-        <div id="header" class="row align-items-center" style="margin-bottom:32px;height: 160px; background-image: url(./content/woods.png);">
+        <div id="header" class="row align-items-center" style="margin-bottom:32px;height: 160px;">
             <div class="col-12 text-center" style="color:white; font-family:Jost; font-size:48px; font-weight:bold;">
                 Welcome to johntencate.com
             </div>
@@ -51,14 +51,13 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.4.36/vue.global.prod.min.js"></script>
 <script type="text/javascript">
     function getBaseUrl() {
-    var re = new RegExp(/^.*\//);
-    return re.exec(window.location.href);
-
+        var re = new RegExp(/^.*\//);
+        return re.exec(window.location.href);
+    }
     $(document).ready(function() {
         var baseUrl = getBaseUrl();
         $('#header').css('background-image', 'url(' + baseUrl + 'content/woods.png)');
     });
-}
 </script>
 
 </html>
